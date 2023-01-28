@@ -27,8 +27,8 @@ import popuSecond from '../images/popup2.png'
 
 const Violations = () => {
 
-  const [toogle, setToogle] = useState(false)
-  const [popup,setPopup] = useState(true)
+  const [toogle, setToogle] = useState(true)
+  const [popup, setPopup] = useState(true)
 
 
 
@@ -36,10 +36,13 @@ const Violations = () => {
     <div className='violations'>
       <div className="violation-content">
         <h3 className='title'>P.P.E Violations Table</h3>
+        {/* form */}
         <Form />
       </div>
 
-      <div class="relative overflow-x-auto w-full my-10">
+
+      {/* table violations */}
+      <div class="relative  w-full my-10">
         <table className='bg-white w-[98%] mx-auto relative'>
           <thead className='border-b'>
             <tr>
@@ -49,51 +52,51 @@ const Violations = () => {
                   <h3 class="mb-4 text-[11px] font-500 text-[#989797]">Select columns to display</h3>
                   <ul className='text-[#D8D8D8] flex flex-col space-y-2'>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Protective" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Protective gloves</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Safety" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Safety glasses</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Ear" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Ear protection</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Mask" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Mask protection</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Knee" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Knee pads</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Safety" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Safety shoes</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Coverall" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Coverall</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Jacket" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Hi-Vis Jacket</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Safety" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Safety Harness</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Face" checked type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Face shield</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Goggles" checked type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Goggles</p>
                     </li>
                     <li className='flex items-center space-x-3'>
-                      <input id="vue-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
+                      <input id="Welding" checked type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                       <p className='text-[11px] font-[400]'>Welding helmet</p>
                     </li>
 
@@ -246,10 +249,14 @@ const Violations = () => {
               <td></td>
               <td></td>
               <td className='px-2 py-2 flex items-center justify-center'>
-                <span onClick={()=>setPopup(!popup)} className='bg-[#F8CC23] w-[36px]  text-[#313131] text-[14px] font[700] font[700] p-2 flex items-center justify-center  h-[36px] rounded-[18px]'>3</span>
+                <span onClick={() => setPopup(!popup)} className='bg-[#F8CC23] w-[36px]  text-[#313131] text-[14px] font[700] font[700] p-2 flex items-center justify-center  h-[36px] rounded-[18px]'>3</span>
                 {/* popup here */}
-                {popup && <div className='bg-white p-4 shadow-md absolute w-[296px] right-0 top-[180px]'>
-                  <div>
+
+                {popup && <div className='bg-white p-4 shadow-md absolute rounded-[5px] w-[296px] right-0 top-[180px]'>
+
+               
+                  <div className='relative'>
+                    <div className='triangle'></div>
                     <div>
                       <img src={popupFirst} alt="popuImage" className='w-full rounded-[5px] object-contain' />
                     </div>
@@ -266,7 +273,7 @@ const Violations = () => {
                       </ul>
                     </div>
                     <div className='bg-[#F8F8F8] border-[0.5] border-[#E1E1E1]'>
-                      <p className='text-[11px] rounded-[5px] w-[200px] font-[400] text-[#313131] p-1'>consectetur adipiscing elit, do eiusmod tempor
+                      <p className='text-[11px] rounded-[5px] w-[250px] font-[400] text-[#313131] p-2'>consectetur adipiscing elit, do eiusmod tempor
                         incididunt ut labore et dolore  magna aliqua
                         adipiscingdo eiusmod  tempor incididunt labore</p>
                     </div>
@@ -287,7 +294,7 @@ const Violations = () => {
                       </ul>
                     </div>
                     <div className='bg-[#F8F8F8] border-[0.5] border-[#E1E1E1]'>
-                      <p className='text-[11px] rounded-[5px] w-[200px] font-[400] text-[#313131] p-1'>consectetur adipiscing elit, do eiusmod tempor
+                      <p className='text-[11px] rounded-[5px] w-[250px] font-[400] text-[#313131] p-2'>consectetur adipiscing elit, do eiusmod tempor
                         incididunt ut labore et dolore  magna aliqua
                         adipiscingdo eiusmod  tempor incididunt labore</p>
                     </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsArrowDown, BsMoon } from 'react-icons/bs'
 import { IoIosNotificationsOutline } from 'react-icons/io'
 import a from '../icons/a.png'
-import { AiOutlineMenu, AiOutlineDown, AiOutlineSetting } from 'react-icons/ai'
+import {  AiOutlineDown, AiOutlineSetting } from 'react-icons/ai'
 import { MdOutlineLogout } from 'react-icons/md'
 import { BsShieldExclamation } from 'react-icons/bs'
 import english from '../icons/english.png'
@@ -16,7 +16,7 @@ import '../styles/Navbar.css'
 const Navbar = () => {
 
     const [profile,setProfile] = useState(false);
-    const [languages,setLanguages] = useState(false);
+    const [languages,setLanguages] = useState(true);
 
     const languagesaData = [
         {
@@ -56,8 +56,7 @@ const Navbar = () => {
         <div className='flex flex-col w-full'>
             <nav className='navbar w-full bg-white border-b border-gray-300 h-[60px] flex items-center justify-center flex-col'>
                 <div className="nav-contentp-4  flex justify-between items-center w-[95%] mx-auto">
-                    <div className='flex items-center space-x-5'>
-                        <AiOutlineMenu size={18} cursor='pointer' className='text-[#C4C4C4]' />
+                    <div className='pl-8'>
                         <h3 className='font[500] text-[18px]'>Overview</h3>
                     </div>
                     <div className='flex items-center space-x-7'>
