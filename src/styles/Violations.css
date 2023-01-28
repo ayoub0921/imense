@@ -1,0 +1,34 @@
+.violations{
+    @apply pt-[32px]
+}
+
+.violation-content{
+    @apply flex justify-between items-center w-[98%] mx-auto
+}
+
+.violation-content .title{
+    @apply font-[500] text-[16px] leading-[30px] text-[#313131] 
+}
+
+.violation-content form{
+    @apply flex items-center space-x-4
+}
+
+
+.field-input{
+    @apply block w-[200px] rounded-[2px] h-[34px] p-4 pl-10 text-sm text-gray-900 border border-gray-300  bg-white focus:ring-blue-500 focus:border-blue-500
+}
+
+.field-input::placeholder{
+    @apply text-[#C8C8C8] font-[500] text-[12px]
+}
+
+
+/* table */
+
+
+
+th span{
+    @apply text-[11px] text-[#737373] font-[400]
+}
+

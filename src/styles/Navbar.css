@@ -1,0 +1,17 @@
+
+.darpeauxChoos{
+    @apply flex items-center space-x-1 cursor-pointer
+}
+
+.darpeauxMenu{
+    @apply  absolute w-[133px] bg-white rounded-[5px] shadow-md p-2 mt-4 z-10
+}
+
+.darpeauxChoos:hover .darpeauxMenu{
+    @apply block
+}
+
+
+.menu{
+    @apply absolute bg-white rounded-[5px] shadow-md p-3 z-10 ;
+}
