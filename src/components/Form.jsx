@@ -1,4 +1,4 @@
-import React  from 'react'
+import React from 'react'
 import square from '../icons/Vector (4).png'
 import { AiOutlineSearch } from 'react-icons/ai'
 
@@ -15,7 +15,7 @@ const Form = () => {
                 </div>
                 <input type="search" id="default-search" className="field-input" placeholder="Search workers ..." required />
             </div>
-            <select disabled id="cat" className="bg-gray-50 border w-[200px] rounded-[2px] h-[34px] border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <select  id="cat" className="bg-gray-50 border w-[200px] rounded-[2px] h-[34px] border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option selected>All Contractors</option>
                 <option value="cat1">cat1</option>
                 <option value="cat2">cat2</option>

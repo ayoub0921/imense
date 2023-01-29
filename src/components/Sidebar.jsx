@@ -53,8 +53,8 @@ const Sidebar = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-4">
-              <span className='text-[#939393] text-[13px] font-[700]'>@ App name 2021</span>
+          <div className="absolute bottom-4 border-t border-gray-400">
+              <span className='text-[#939393] text-[13px] font-[700] pt-1'>@ App name 2021</span>
               <p className='text-[#8A8A8A] text-[11px] font-[400] w-[198px]'>Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor
                 incididunt ut.</p>

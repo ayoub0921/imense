@@ -80,12 +80,12 @@ const Navbar = () => {
                             </div>
                             {languages && <div className='darpeauxMenu'>
                                 {languagesaData.map(l => (
-                                    <>
+                                    <div key={l.id}>
                                         <div className='flex items-center space-x-2 leading-7 cursor-pointer'>
                                             <img src={l.drapeaux} width='18.75px' height='18.75px' alt={l.language} />
                                             <span className='text-[12px] font-[400] text-[#ADADAD]'>{l.language}</span>
                                         </div>
-                                    </>
+                                    </div>
                                 ))}
                             </div>}
                         </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className="sites bg-white flex h-[36px] items-center space-x-4">
+            <div className="sites bg-white  flex h-[36px] items-center space-x-4">
                 <h3 className='border-r font-[500] text-[#ADADAD] text-[12px] border-gray-300 w-[87px] h-[36px] flex items-center justify-center uppercase'>sites</h3>
                 <ul className='flex space-x-8'>
                     <li className='font-[500] text-[12px] text-[#42A4DF]'>

@@ -42,8 +42,8 @@ const Violations = () => {
 
 
       {/* table violations */}
-      <div class="relative  w-full my-10">
-        <table className='bg-white w-[98%] mx-auto relative'>
+      <div class="relativ my-10 w-[98%] mx-auto overflow-auto">
+        <table className='bg-white w-full mx-auto relative '>
           <thead className='border-b'>
             <tr>
               <th className='border-r border-b text-center '>
